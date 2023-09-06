@@ -1,0 +1,98 @@
+<!--
+    comments
+    name: Accuracy Electric LLC
+    domain: accuracyelectricllc.com
+    owner and founder: Edgar Pedreros 
+    provide phone number and email from business card
+    languages: English and Spanish 
+    Colors: blue, white, yellow,
+    License number on bottom right of BS- add on website
+
+    front page beginning
+    - company 
+    - location 
+    - number 
+    - license number
+    - "we got the power"
+    
+    want to add 'Accuracy Electric LLC next to logo'
+    want to add phone number next to logo, maybe under company name
+    kinda want logo all the way to the left side and then the company name and phone number under
+    also add 'naples, fl' next to phone number
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta tag helps make website responsive -->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <!--Title of website-->
+    <title>Accuracy Electric LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- icons for menu for smaller devices, cdn 5 is the newest release-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header"> 
+    <!-- header class -->
+    <!-- contains logo and links -->
+    <nav>
+        <!-- <a anchor tag to click on obj(logo or link) -->
+        <p>Accuracy Electric LLC<br>EC13003639<br>Naples, Fl<br>239-398-2136</p>
+        <a href="index.html"><img src="images/logo3.png"></a>
+        <!-- nav-links class - menu-->
+        <!-- create id navLinks to use with javascript-->
+        <div class="nav-links" id="navLinks">
+            <!--for close icon on menu for smaller devices-->
+            <!-- onclick is javascript, hideMenu function-->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <!-- clickable links -->
+                <li><a href ="index.html">HOME</a></li>
+                <li><a href ="about.html">ABOUT US</a></li>
+                <li><a href ="services.html">SERVICES</a></li>
+                <li><a href ="reviews.html">REVIEWS</a></li>
+                <li><a href ="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!--menu icon for smaller devices-->
+        <!-- onclick is javascript, showMenu function-->
+        <i class="fa-solid fa-bars" onclick="showMenu()""></i>
+    </nav>
+    <!-- text-box class -->
+    <!-- contains main text on front page-->
+    <div class="text-box">
+    <!-- <br> is new line -->
+        <!--mainpage title-->
+        <h1> We've got the power! </h1>
+        <p> Get your electrical services done today. </p>
+        <!-- hero btn class to click to learn more -->
+        <a href="about.html" class="hero-btn"> Get Started </a>
+    </div>
+    </section>
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<!--Footer-->
+<section class="footer">
+    <p>Accuracy Electric LLC</p>
+    <p1>Naples, Fl<br> 239-398-2136<br></p1>
+    <p2>&copy 2023 Accuracy Electric LLC. All rights reserved.</p2>
+        <a href="privacypolicy.html">
+            <p2>Privacy Policy.<br></p2>
+        </a>
+    <p2>Created by Gabriela Pedreros</p2>
+    
+</section>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta tag helps make website responsive -->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <!--Title of website-->
+    <title>About Accuracy Electric LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+<!-- icons for menu for smaller devices, cdn 5 is the newest release-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header2"> 
+    <!-- sub hesder class -->
+    <!-- still contains logo and-->
+    <nav>
+        <!-- <a anchor tag to click on obj(logo or link) -->
+            <p>Accuracy Electric LLC<br>EC13003639<br>Naples, Fl<br>239-398-2136</p>
+        <a href="index.html"><img src="images/logo3.png"></a>
+        <!-- nav-links class -->
+        <!-- create id navLinks to use with javascript-->
+        <div class="nav-links" id="navLinks">
+            <!--for close icon on menu for smaller devices-->
+            <!-- onclick is javascript, hideMenu function-->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <!-- clickable links -->
+                <li><a href ="index.html">HOME</a></li>
+                <li><a href ="about.html">ABOUT US</a></li>
+                <li><a href ="services.html">SERVICES</a></li>
+                <li><a href ="reviews.html">REVIEWS</a></li>
+                <li><a href ="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!--menu icon for smaller devices-->
+        <!-- onclick is javascript, showMenu function-->
+        <i class="fa-solid fa-bars" onclick="showMenu()""></i>
+    </nav>
+    <h1>About Us</h1> <!-- title -->
+    </section>
+
+<section class="about-us">
+    <h1>About Accuracy Electric LLC</h1>
+    <p>Located in Naples, Florida, Accuracy Electric LLC has been in business for over 20 years.<br>The founder and owner, Edgar Pedreros, is a State Electrical Contractor whose company is licensed and insured (EC13003639).</p>
+    <a href="services.html" class="hero-btn blue-btn">Explore Services</a>
+</section>
+
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!--Footer-->
+<section class="footer2">
+    <p1>Accuracy Electric LLC<br></p1>
+    <p2>Naples, Fl<br> 239-398-2136<br></p2>
+    <p3>&copy 2023 Accuracy Electric LLC. All rights reserved.</p3>
+    <a href="privacypolicy.html">
+        <p3>Privacy Policy.<br></p3>
+    </a>
+    <p3>Created by Gabriela Pedreros</p3>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!--
+    -reviews
+    add link for client to review on homeadvisor
+    add link to the google forms as well 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta tag helps make website responsive -->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <!--Title of website-->
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+<!-- icons for menu for smaller devices, cdn 5 is the newest release-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header"> 
+    <!-- header class -->
+    <!-- contains logo and links -->
+    <nav>
+        <!-- <a anchor tag to click on obj(logo or link) -->
+            <p>Accuracy Electric LLC<br>EC13003639<br>Naples, Fl<br>239-398-2136</p>
+        <a href="index.html"><img src="images/logo3.png"></a>
+        <!-- nav-links class -->
+        <!-- create id navLinks to use with javascript-->
+        <div class="nav-links" id="navLinks">
+            <!--for close icon on menu for smaller devices-->
+            <!-- onclick is javascript, hideMenu function-->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <!-- clickable links -->
+                <li><a href ="index.html">HOME</a></li>
+                <li><a href ="about.html">ABOUT US</a></li>
+                <li><a href ="services.html">SERVICES</a></li>
+                <li><a href ="reviews.html">REVIEWS</a></li>
+                <li><a href ="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!--menu icon for smaller devices-->
+        <!-- onclick is javascript, showMenu function-->
+        <i class="fa-solid fa-bars" onclick="showMenu()""></i>
+    </nav>
+    <h1>Reviews</h1>
+    </section>
+
+<!-- Reviews-->
+<section class="reviews">
+
+    <section class="click">
+        <a href="https://forms.gle/JFx98UH2Z7ubH2w38" target="_blank">
+            <img src="images/review.png">
+        </a>
+    </section>
+
+    <h1> What Our Clients Say</h1> <!--title-->
+    <div class="row">
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <h3> K. Jacobs</h3>
+                <!-- 5 stars & would recommend -->
+                <p>"I have used this company and feel very fortunate to have found an honest, licensed, and insured electrician. (He holds multiple licenses with the State of Florida, I checked.) Edgar was the best electrician ever. He fixed so many issues. His prices are also incredibly competitive. We will always use this company and recommend Edgar's expertise and services to everyone. He is the best electrician we have ever had!"</p>
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <h3> K. N.</h3>
+                <!-- 5 stars & would recommend -->
+                <p>"Best licensed and insured electrician we've ever had. Very pleased with all the work Edgar and Stephan have done."</p>
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <h3> James T.</h3>
+                <!-- 5 stars & would recommend -->
+                <p>"Responded quickly to my call, scheduled me immediately and swiftly and competently completed the job    Very pleased, I will use Edgar again for all electrical work."</p>
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <!-- 5 stars & would recommend -->
+                <h3> Chris N.</h3>
+                <p>"Superb service and workmanship . Very satisfied. I have used Edgar several times and I definitely will recommend him to my family and friends"</p>
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <h3>Ben J.</h3>
+                <!-- 5 stars & would recommend -->
+                <p>"Accuracy Electric was very responsive to our needs. They did great work and were very professional! We will continue to work with them in the future."</p>
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <h3>Beth G.</h3>
+                <!-- 5 stars & would recommend -->
+                <p>"On time, left no stone unturned, Edgar was a pleasure."</p>
+            </div>
+        </div>
+        <div class="review-col">
+            <img src="images/5star.png">
+            <div>
+                <h3>V.M.</h3>
+                <!-- 5 stars & would recommend -->
+                <p>"I had new service wires put in my house from my Electrical panel to my weatherhead, which required the electrical company to shut down power from the street. Edgar and his team work together with FPL to get the job done professionally in a timely matter. My tenants were restored with power within a few hours. I would highly recommend accuracy electric."</p>
+            </div>
+        </div>
+    </div> 
+</section>
+
+
+<section class="ctar">
+    <h1> 
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </h1>
+</section>
+
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!--Footer-->
+<section class="footer2">
+    <p1>Accuracy Electric LLC<br></p1>
+    <p2>Naples, Fl<br> 239-398-2136<br></p2>
+    <p3>&copy 2023 Accuracy Electric LLC. All rights reserved.</p3>
+    <a href="privacypolicy.html">
+        <p3>Privacy Policy.<br></p3>
+    </a>
+    <p3>Created by Gabriela Pedreros</p3>
+</section>
+
+</body>
+</html>
+
+<!--    <a href="https://forms.gle/JFx98UH2Z7ubH2w38" target="_blank">
+        <img src="images/review.png">
+    </a>
+-->

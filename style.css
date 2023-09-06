@@ -1,0 +1,567 @@
+/* this margin and padding is applicable to all html elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif; /*font*/
+}
+/*------------------ MAIN PAGE ---------------------*/
+/*HEADER class*/
+/*contains the logo and menu links*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* linear gradient for background */
+    /* rgba - color code */
+    background-image: linear-gradient(rgb(0, 0, 0,0.8),rgb(188, 180, 133,0.45)),url(images/ae1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header p{
+    color: #fff;
+    font-size: 14.5px;/*was 60*/
+    padding-top: 0%;
+    padding-right: 2%;
+}
+/*NAV element - tag - menu list */
+/* all links */
+nav{
+    display: flex;
+    /*internal space*/
+    padding-left: 3%;
+    padding-top: 1.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* logo in nav */
+nav img{
+    /* had 750 */
+    /* vid has 150 */
+    width: 60px; /*size of logo*/
+}
+/* NAV-LINKS class in Nav*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+}
+/* links details - list*/
+.nav-links ul li{
+    list-style: none; /* no bullet */
+    display: inline-block; /*horzontally*/
+    padding: 10px 15px;
+    position: relative;
+}
+/* menu links color and font and size*/
+/* a for anchor tag*/
+.nav-links ul li a{
+    /* font - google fonts 13:59 in vid*/
+    color: #fff;
+    text-decoration: none;
+    /* had 80*/
+    /* vid has 13 */
+    font-size: 17px;
+}
+/* add underline */
+/* hover effect */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9f9669;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+/* underline all the way under the word*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* text-box class- main page*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);/* center */
+    text-align: center;
+}
+/*size of header in tetbox*/
+.text-box h1{
+    /*had 215*/
+    /* vid has 62*/
+    font-size: 43px;
+    padding-bottom: 1%;
+}
+/*size of paragraph */
+.text-box p{
+    /* top l r bottom */
+    margin: 10px 0 40px;
+        /* had 105 */
+    /* vid had 14 */
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 1%;
+}
+/* hero-btn class*/
+/*link to learn more, main button*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 34px;
+    /* had 60 */
+    font-size: 50px;/*start for web*/
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+}
+.hero-btn:hover{
+    border: 1px solid #2d549e;
+    background: #2d549e;
+    transition: 1s;
+}
+/*icons hidden for larger screen devices*/
+nav .fa-solid{
+    display: none;
+}
+
+/*for smaller devices*/
+/* here i am able to adjust what i alr have to fit a smaller screen*/
+/* in vid max width was 700 */
+/* max width and length right?
+jphone- ugh
+width:
+length:
+*/
+.footer{
+    box-sizing: border-box;
+    width: 100%;
+    background:#031941;
+    color:#fff;
+    padding: 10px 40px;
+    padding-bottom:10px;
+    text-align: center;
+    margin: auto;
+    line-height: 18px;
+}
+.footer p{
+    font-size: 12.3px;
+}
+.footer p1{
+    font-size: 10.5px;
+}
+.footer p2{
+    font-size: 8.5px;
+}
+/* --------------------------------About us------------- */
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(2, 6, 25), rgba(2,6,25,0.3)), url(images/ae1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.sub-header2 p{
+    font-size: 13px;
+    text-align: left;
+    padding-top: 2%;
+}
+.sub-header2 nav img{
+    width: 60px;
+    padding-right: 50px;
+}
+.sub-header2 h1{
+    margin-top: 100px;
+}
+.fa-solid{
+    padding-right: 5%;
+}
+/* menu details*/
+.sub-header2 .nav-links{
+        position: fixed; /*menu doesnt show on side anymore, must click menu button to see*/
+        background: #9f9669;
+        height: 100vh;
+        width: 134px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+}
+/*move all the menu links down from top*/
+
+    /*menu details on smaller device*/
+.sub-header2 .nav-links ul li{
+        display: block;/* separation between each link*/
+        padding: 20px 30px; /*do i need???????????*/
+}
+    /* menu links font size reduced */
+.sub-header2 .nav-links ul li a{
+        font-size: 18px;
+}
+    /* icon details */
+.sub-header2 nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+}
+.about-us{
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px; /* size of box */
+    padding-bottom: 50px;
+}
+.about-us h1{
+    text-align: center;
+    color:#031941;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+.about-us p{
+    color: #031941;
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+/* about us page */
+.blue-btn{
+    text-align: center;
+    border: 1px solid #2d549e;
+    background: transparent;
+    color: #2d549e;
+    margin-top: 5%;
+    font-size: 19px;
+}
+.blue-btn:hover{
+    color:#fff;
+}
+.footer2{
+    width: 100%;
+    background:#031941;
+    color:#fff;
+    text-align: center;
+    margin: auto;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer2 p1{
+    font-size: 12.3px;
+}
+.footer2 p2{
+    font-size: 10.5px;
+}
+.footer2 p3{
+    font-size: 8.5px;
+}
+/*--------------------------------SERVICES PAGES ------*/
+.sub-header{
+    height:50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(images/spark.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.sub-header p{
+    font-size: 13px;
+    text-align: left;
+    padding-top: 2%;
+}
+.sub-header nav img{
+    width: 60px;
+    padding-right: 50px;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.fa-solid{
+    padding-right: 5%;
+}
+/* menu details*/
+/* menu details*/
+.sub-header .nav-links{
+    position: fixed; /*menu doesnt show on side anymore, must click menu button to see*/
+    background: #9f9669;
+    height: 100vh;
+    width: 134px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+/*move all the menu links down from top*/
+
+/*menu details on smaller device*/
+.sub-header .nav-links ul li{
+    display: block;/* separation between each link*/
+    padding: 20px 30px; /*do i need???????????*/
+}
+/* menu links font size reduced */
+.sub-header .nav-links ul li a{
+    font-size: 18px;
+}
+/* icon details */
+.sub-header nav .fa-solid{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.services{
+    width: 98%;
+    margin:auto;
+    text-align: center; /*was left*/
+    margin-top: 150px;
+    color: #000a48;
+    padding-top: 20px;
+}
+.services h3{
+    margin-top: 5%;
+}
+.services p{
+    margin: auto;
+    text-align: center;
+    line-height: 35px;
+    font-size: 19px;
+
+}
+.row3{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.service-col{
+    flex-basis: 100%;
+    position: relative;
+}
+.service-col img{
+    width: 65%;
+}
+.layer h3{
+    font-size: 17px;
+    color: #000a48;
+}
+/* call to action */
+.cta{
+    margin: auto;
+    width: 85%;
+    background-image: linear-gradient(rgb(158, 154, 122),rgb(158, 154, 122)), url(images/ae3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom:3%;
+}
+.cta h1{
+    color: #fff;
+    font-size:20px;
+    margin-bottom: 13px;
+    padding:10px;
+    margin-top: 3%;
+}
+.cta .hero-btn{
+    font-size:19px;
+}
+
+/*------------------REVIEWS PAGE -----------------*/
+.reviews{
+    width: 80%;
+    margin: auto; /* centers reviews on page */
+    margin-top: 2%;
+    text-align: center; 
+    color: #141313; /*color of testimonials from clients*/
+}
+.reviews h1{
+    color: #031941;
+    font-size: 26px;
+}
+.row{
+    margin-top: 3%;
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+.review-col h3{
+    font-size: 12px;
+    margin: 1px;
+    text-align: left;
+}
+.review-col{
+    flex-basis: 31%;
+    border-radius: 2px;
+    margin-bottom: 2%;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    text-align: left;
+    background: rgb(204, 222, 225);
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+}
+/*star image - .review-col img{}*/
+.review-col img{
+    height: 14px;
+    margin-right: 10px;
+}
+.click{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+.click img{
+    width: 13%;
+}
+.ctar{
+    margin: auto;
+    width: 85%;
+    background-image: linear-gradient(rgba(139, 139, 139, 0.65),rgba(139, 139, 139, 0.65)), url(images/ae3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    margin-bottom: 15px;
+}
+.ctar h1{
+    color: #000000;
+}
+.ctar .hero-btn{
+    font-size: 19px;
+}
+/*-----------CONTACT PAGE-----------------------*/
+.contact{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-between;
+    color:#031941;
+}
+.contact-col{
+    flex-basis: 100%;
+    padding: 60px 2px;
+    line-height: 30px;
+}
+.contact-col p{
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+.contact-col p2{
+    font-size: 14px;
+}
+.contact-col h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.contact-col img{
+    width: 65%;
+}
+.comment-box{
+    color:#141313;
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-box input, .comment-box textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-box button{
+    margin: 10px 0;
+    font-size: 19px;
+}
+/*----------------MEDIA-----------------------*/
+/*700 changes everything*/
+/*different subheader means i have to add all the other stuff anv*/
+.footer a:link{
+    color: #fff;
+}
+.footer2 a:link{
+    color: #fff;
+}
+.header a:link{
+    color: #fff;
+}
+.sub-header a:link{
+    color: #fff;
+}
+.sub-header2 a:link{
+    color: #fff;
+}
+
+@media only screen and (max-width: 700px){
+    /* visit us button size reduced */
+    .click img{
+        width: 30%;
+    }
+    nav img{
+        margin-right: 80px;
+    }
+    nav{
+        padding-top: 5%;
+    }
+    /* menu details*/
+    .nav-links{
+        position: fixed; /*menu doesnt show on side anymore, must click menu button to see*/
+        background: #9f9669;
+        height: 100vh;
+        width: 134px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    /*move all the menu links down from top*/
+    /*menu details on smaller device*/
+    .nav-links ul li{
+        display: block;/* separation between each link*/
+        padding: 20px 30px; /*do i need???????????*/
+    }
+    /* menu links font size reduced */
+    .nav-links ul li a{
+        font-size: 18px;
+    }
+    /* icon details */
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .contact-col a:link{
+        color:#031941;
+    }
+}
+
