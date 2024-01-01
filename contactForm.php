@@ -13,7 +13,8 @@ $email_body = "User Name: $name.\n".
                 "Location: $location.\n".
                 "Project: $project.\n";
 
-$to = 'pedreros5@live.com';
+$to = 'accuracyelectricllc@gmail.com';
+/* real email not provided for privacy purposes in code */
 
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $client_email \r\n";
