@@ -4,7 +4,7 @@ This website is fully functional, however this website in not complete as I woul
 Website link: https://accuracyelectricllc.com/
 
 ## Technology
-This is a static website, using html, css, and php to create the website. 
+This is a static website. I used html, css, and php to create the website. 
 
 ## Pages
 Home - Company slogan
@@ -13,7 +13,7 @@ About - Provides background on the company, owner, and years of experience
 
 Services - Lists several of the company's services
 
-Reviews - Data of the reviews on this page were gathered from a Google Form from long-term client's of the owner
+Reviews - Reviews gathered from a Google Form filled out by the owner’s long‑term clients
 
 Contact - PHP form for client-owner communication through email
 
