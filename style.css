@@ -450,13 +450,14 @@ length:
 .reviews-carousel {
   width: 100%;
   background: #ffffff;
-  padding: 60px 0;
+  padding: 50px 0;
   box-sizing: border-box;
   text-align: center;
 }
+
 .rc-top { margin-bottom: 40px; }
 .rc-label { color: #9f9669; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
-.reviews-carousel h1 { color: #fff; font-size: 32px; }
+.reviews-carousel h1 { color:#031941; font-size: 26px; }
 .rc-track-wrap { overflow: hidden; width: 100%; }
 .rc-track { display: flex; gap: 20px; padding: 0 40px; transition: transform 0.45s cubic-bezier(.4,0,.2,1); box-sizing: border-box; }
 .rc-card { flex: 0 0 320px; background: #0d1230; border: 1px solid #1e2a50; border-radius: 12px; padding: 28px 24px; box-sizing: border-box; text-align: left; }
