@@ -487,14 +487,17 @@ length:
     width: 100%;
 }
 .contact-col{
-    flex-basis: 100%;
-    padding: 50px 0px;
+    flex-basis: auto;
+    padding: 50px 60px;
     line-height: 30px;
+    text-align: left;
 }
 .contact-col p{
     font-size: 17px;
-    margin: auto;
-    text-align: center;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 0px;
+    display: inline-block;
 }
 .contact-col p2{
     font-size: 14px;
@@ -502,9 +505,10 @@ length:
 .contact-col h3{
     font-size: 20px;
     padding-bottom: 1px;
+    text-align: left;
 }
 .contact-col img{
-    width: 75%;
+    width: 200px;
 }
 .comment-box{
     color:#141313;
