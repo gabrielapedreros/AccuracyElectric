@@ -601,3 +601,74 @@ length:
     }
 }
 
+/*------------------SERVICES MODERN -----------------*/
+.services-modern {
+    width: 85%;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    color: #031941;
+}
+.services-modern h1 {
+    font-size: 26px;
+    color: #031941;
+    padding-bottom: 30px;
+}
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.service-card {
+    flex-basis: 200px;
+    background: #f0f4fb;
+    border: 1px solid #d0daf0;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #031941;
+}
+.service-card i {
+    font-size: 32px;
+    color: #2d549e;
+    margin-bottom: 12px;
+    display: block;
+}
+.service-card h3 {
+    font-size: 15px;
+    color: #031941;
+    font-weight: 700;
+}
+.services-list {
+    background: #f0f4fb;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left;
+}
+.services-list h2 {
+    font-size: 20px;
+    color: #031941;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.services-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+.service-item {
+    font-size: 16px;
+    color: #031941;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.service-item i {
+    color: #2d549e;
+    font-size: 12px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}

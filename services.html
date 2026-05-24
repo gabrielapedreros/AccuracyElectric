@@ -38,97 +38,83 @@
 </head>
 <body>
     <section class="sub-header"> 
-    <!-- header class -->
-    <!-- contains logo and links -->
-    <nav>
-        <!-- <a anchor tag to click on obj(logo or link) -->
-        <p>Accuracy Electric LLC<br>239-398-2136<br>Naples, FL</p>
-        <a href="index.html"><img src="images/reallogo.png"></a>
-        <!-- nav-links class -->
-        <!-- create id navLinks to use with javascript-->
-        <div class="nav-links" id="navLinks">
-            <!--for close icon on menu for smaller devices-->
-            <!-- onclick is javascript, hideMenu function-->
-            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-            <ul>
-                <!-- clickable links -->
-                <li><a href ="index.html">HOME</a></li>
-                <li><a href ="about.html">ABOUT US</a></li>
-                <li><a href ="services.html">SERVICES</a></li>
-                <li><a href ="reviews.html">REVIEWS</a></li>
-                <li><a href ="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <!--menu icon for smaller devices-->
-        <!-- onclick is javascript, showMenu function-->
-        <i class="fa-solid fa-bars" onclick="showMenu()""></i>
-    </nav>
-
-    <h1>Services</h1>
-
-    <section class="services">
-        <div class="row3">
-            <div class="service-col">
-                <img src="images/call.png">
-                <div class="layer">
-                    <h3> Service Calls </h3>
-                </div>
+        <nav>
+            <p>Accuracy Electric LLC<br>239-398-2136<br>Naples, FL</p>
+            <a href="index.html"><img src="images/reallogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href ="index.html">HOME</a></li>
+                    <li><a href ="about.html">ABOUT US</a></li>
+                    <li><a href ="services.html">SERVICES</a></li>
+                    <li><a href ="reviews.html">REVIEWS</a></li>
+                    <li><a href ="contact.html">CONTACT</a></li>
+                </ul>
             </div>
-            <div class="service-col">
-                <img src="images/ts.png">
-                <div class="layer">
-                    <h3> Trouble Shooting </h3>
-                </div>
-            </div>
-            <div class="service-col">
-                <img src="images/store.png">
-                <div class="layer">
-                    <h3>Commercial</h3>
-                </div>
-            </div>
-            <div class="service-col">
-                <img src="images/const.png">
-                <div class="layer">
-                    <h3> New Construction<br>and Remodeling </h3>
-                </div>
-            </div>
-        </div>
-
-        <h3>Electrical Maintenance</h3>
-        <p> Smoke Detectors<br>Generators<br>Security Cameras<br>Landscape and Outdoor Lighting<br>Fan Installation<br>
-        Indoor Lighting<br>Pool Electrical<br>Install and Upgrade Electrical Panels<br>Surge Protector <br>
-        Electrical Upgrades<br>EV Charging Stations<br>Solar Panels</p>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Services</h1>
     </section>
 
+    <section class="services-modern">
+        <h1>What We Do</h1>
 
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-phone-volume"></i>
+                <h3>Service Calls</h3>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Trouble Shooting</h3>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-building"></i>
+                <h3>Commercial</h3>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-helmet-safety"></i>
+                <h3>New Construction & Remodeling</h3>
+            </div>
+        </div>
 
-<section class="cta">
-    <h1>All Services are Done with Excellence</h1>
-    <a href="reviews.html" class="hero-btn">Explore Reviews</a>
-</section>
+        <div class="services-list">
+            <h2>Electrical Maintenance</h2>
+            <div class="services-list-grid">
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Smoke Detectors</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Generators</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Security Cameras</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Landscape & Outdoor Lighting</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Fan Installation</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Indoor Lighting</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Pool Electrical</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Install & Upgrade Electrical Panels</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Surge Protector</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Electrical Upgrades</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> EV Charging Stations</div>
+                <div class="service-item"><i class="fa-solid fa-bolt"></i> Solar Panels</div>
+            </div>
+        </div>
+    </section>
 
+    <section class="cta">
+        <h1>All Services are Done with Excellence</h1>
+        <a href="reviews.html" class="hero-btn">Explore Reviews</a>
+    </section>
 
-<!-- Javascript for Toggle Menu -->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){ navLinks.style.right = "0"; }
+        function hideMenu(){ navLinks.style.right = "-200px"; }
+    </script>
 
-<!--Footer-->
-<section class="footer2">
-    <p1>Accuracy Electric LLC<br></p1>
-    <p2>Naples, Fl<br> 239-398-2136<br></p2>
-    <p3>&copy 2023 Accuracy Electric LLC. All rights reserved.</p3>
-    <a href="privacypolicy.html">
-        <p3>Privacy Policy.<br></p3>
-    </a>
-    <p3>Created by Gabriela Pedreros</p3>
-</section>
+    <section class="footer2">
+        <p1>Accuracy Electric LLC<br></p1>
+        <p2>Naples, Fl<br> 239-398-2136<br></p2>
+        <p3>&copy 2023 Accuracy Electric LLC. All rights reserved.</p3>
+        <a href="privacypolicy.html"><p3>Privacy Policy.<br></p3></a>
+        <p3>Created by Gabriela Pedreros</p3>
+    </section>
 
 </body>
 </html>
