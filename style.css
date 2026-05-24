@@ -477,14 +477,14 @@ length:
 /*-----------CONTACT PAGE-----------------------*/
 .contact{
     width: 100%;
-    margin: center;
     background-color: #cdcfd4;
+    text-align: center;
 }
 .row2{
-    margin: left;
-    display:inline-flex;
-    justify-content:space-between;
-    color:#031941;
+    display: flex;
+    justify-content: center;
+    color: #031941;
+    width: 100%;
 }
 .contact-col{
     flex-basis: 100%;
@@ -510,7 +510,7 @@ length:
     color:#141313;
     border: 0px solid #ccc;
     margin: 50px 60px;
-    padding-top: 0px;
+    padding-top: 30px;
 }
 .comment-box h1{
     text-align: center;
@@ -528,8 +528,9 @@ length:
     background: #dbdbdb;
 }
 .comment-box button{
-    margin: 20px 1px;
+    margin: 20px auto;
     font-size: 19px;
+    display: block;
 }
 /*----------------MEDIA-----------------------*/
 /*700 changes everything*/
