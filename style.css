@@ -509,8 +509,8 @@ length:
 .comment-box{
     color:#141313;
     border: 0px solid #ccc;
-    margin: 100px 60px;
-    padding-top: 30px;
+    margin: 30px 60px;
+    padding-top: 0px;
 }
 .comment-box h1{
     text-align: center;
