@@ -512,8 +512,11 @@ length:
     margin: 100px 60px;
     padding-top: 30px;
 }
-.comment-box h3{
-    text-align: left;
+.comment-box h1{
+    text-align: center;
+    color: #031941;
+    font-size: 26px;
+    padding-bottom: 10px;
 }
 .comment-box input, .comment-box textarea{
     width: 100%;
