@@ -480,7 +480,7 @@ length:
     background-color: #cdcfd4;
     text-align: center;
 }
-.row2{
+.row2{/*font color on contact info*/
     display: flex;
     justify-content: center;
     color: #031941;
@@ -488,7 +488,7 @@ length:
 }
 .contact-col{
     flex-basis: auto;
-    padding: 50px 60px;
+    padding: 20px 60px;
     line-height: 30px;
     text-align: left;
 }
@@ -513,14 +513,14 @@ length:
 .comment-box{
     color:#141313;
     border: 0px solid #ccc;
-    margin: 50px 60px;
+    margin: 20px 60px;
     padding-top: 30px;
 }
 .comment-box h1{
     text-align: center;
     color: #031941;
     font-size: 26px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 .comment-box input, .comment-box textarea{
     width: 100%;
@@ -532,8 +532,8 @@ length:
     background: #dbdbdb;
 }
 .comment-box button{
-    margin: 20px auto;
-    font-size: 19px;
+    margin: 10px auto;
+    font-size: 15px;
     display: block;
 }
 /*----------------MEDIA-----------------------*/
