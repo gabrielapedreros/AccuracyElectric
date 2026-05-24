@@ -404,12 +404,12 @@ length:
 }
 .review-col{
     flex-basis: 31%;
-    border-radius: 2px;
+    border-radius: 0px;
     margin-bottom: 2%;
     padding: 12px 12px;
     box-sizing: border-box;
     text-align: left;
-    background: rgb(204, 222, 225);
+    background: rgb(242, 249, 255);
     cursor: pointer;
     display: flex;
     font-size: 13px;
