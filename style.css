@@ -446,6 +446,33 @@ length:
 .ctar .hero-btn{
     font-size: 19px;
 }
+
+.reviews-carousel {
+  width: 100%;
+  background: #ffffff;
+  padding: 60px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.rc-top { margin-bottom: 40px; }
+.rc-label { color: #9f9669; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
+.reviews-carousel h1 { color: #fff; font-size: 32px; }
+.rc-track-wrap { overflow: hidden; width: 100%; }
+.rc-track { display: flex; gap: 20px; padding: 0 40px; transition: transform 0.45s cubic-bezier(.4,0,.2,1); box-sizing: border-box; }
+.rc-card { flex: 0 0 320px; background: #0d1230; border: 1px solid #1e2a50; border-radius: 12px; padding: 28px 24px; box-sizing: border-box; text-align: left; }
+.rc-stars { color: #9f9669; font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+.rc-card p { color: #c8d0e8; font-size: 14px; line-height: 1.7; margin: 0 0 20px; }
+.rc-card span { color: #9f9669; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+.rc-controls { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 36px; }
+.rc-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid #9f9669; background: transparent; color: #9f9669; font-size: 18px; cursor: pointer; }
+.rc-btn:hover { background: #9f9669; color: #020619; }
+.rc-dots { display: flex; gap: 8px; }
+.rc-dot { width: 8px; height: 8px; border-radius: 50%; background: #1e2a50; cursor: pointer; }
+.rc-dot.active { background: #9f9669; }
+.rc-google { margin-top: 30px; }
+.rc-google a { color: #9f9669; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #9f9669; border-radius: 4px; padding: 10px 24px; text-decoration: none; }
+.rc-google a:hover { background: #9f9669; color: #020619; }
+
 /*-----------CONTACT PAGE-----------------------*/
 .contact{
     width: 100%;

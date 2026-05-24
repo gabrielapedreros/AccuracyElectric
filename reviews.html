@@ -57,73 +57,30 @@
     </section>
 
 <!-- Reviews-->
-<section class="reviews">
-
-    <section class="click">
-        <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x7d662e80bb9d461:0x84de09891c92aa15!12e1?source=g.page.m.np._&laa=nmx-review-solicitation-promoted-recommendation-card" target="_blank">
-            <img src="images/review.png">
-        </a>
-    </section>
-
-    <h1> What Our Clients Say</h1> <!--title-->
-    <div class="row">
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <h3> K. Jacobs</h3>
-                <!-- 5 stars & would recommend -->
-                <p>"I have used this company and feel very fortunate to have found an honest, licensed, and insured electrician. (He holds multiple licenses with the State of Florida, I checked.) Edgar was the best electrician ever. He fixed so many issues. His prices are also incredibly competitive. We will always use this company and recommend Edgar's expertise and services to everyone. He is the best electrician we have ever had!"</p>
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <h3> K. N.</h3>
-                <!-- 5 stars & would recommend -->
-                <p>"Best licensed and insured electrician we've ever had. Very pleased with all the work Edgar and Stephan have done."</p>
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <h3> James T.</h3>
-                <!-- 5 stars & would recommend -->
-                <p>"Responded quickly to my call, scheduled me immediately and swiftly and competently completed the job    Very pleased, I will use Edgar again for all electrical work."</p>
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <!-- 5 stars & would recommend -->
-                <h3> Chris N.</h3>
-                <p>"Superb service and workmanship . Very satisfied. I have used Edgar several times and I definitely will recommend him to my family and friends"</p>
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <h3>Ben J.</h3>
-                <!-- 5 stars & would recommend -->
-                <p>"Accuracy Electric was very responsive to our needs. They did great work and were very professional! We will continue to work with them in the future."</p>
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <h3>Beth G.</h3>
-                <!-- 5 stars & would recommend -->
-                <p>"On time, left no stone unturned, Edgar was a pleasure."</p>
-            </div>
-        </div>
-        <div class="review-col">
-            <img src="images/5star.png">
-            <div>
-                <h3>V.M.</h3>
-                <!-- 5 stars & would recommend -->
-                <p>"I had new service wires put in my house from my Electrical panel to my weatherhead, which required the electrical company to shut down power from the street. Edgar and his team work together with FPL to get the job done professionally in a timely matter. My tenants were restored with power within a few hours. I would highly recommend accuracy electric."</p>
-            </div>
-        </div>
-    </div> 
+<section class="reviews-carousel">
+  <div class="rc-top">
+    <p class="rc-label">testimonials</p>
+    <h1>What Our Clients Say</h1>
+  </div>
+  <div class="rc-track-wrap">
+    <div class="rc-track" id="rcTrack">
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"I have used this company and feel very fortunate to have found an honest, licensed, and insured electrician. Edgar was the best electrician ever. He fixed so many issues. His prices are also incredibly competitive. We will always use this company and recommend Edgar's expertise."</p><span>K. Jacobs</span></div>
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Best licensed and insured electrician we've ever had. Very pleased with all the work Edgar and Stephan have done."</p><span>K. N.</span></div>
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Responded quickly to my call, scheduled me immediately and swiftly and competently completed the job. Very pleased, I will use Edgar again for all electrical work."</p><span>James T.</span></div>
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Superb service and workmanship. Very satisfied. I have used Edgar several times and I definitely will recommend him to my family and friends."</p><span>Chris N.</span></div>
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Accuracy Electric was very responsive to our needs. They did great work and were very professional! We will continue to work with them in the future."</p><span>Ben J.</span></div>
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"On time, left no stone unturned, Edgar was a pleasure."</p><span>Beth G.</span></div>
+      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Edgar and his team worked together with FPL to get the job done professionally in a timely matter. My tenants were restored with power within a few hours. Highly recommend Accuracy Electric."</p><span>V.M.</span></div>
+    </div>
+  </div>
+  <div class="rc-controls">
+    <button class="rc-btn" id="rcPrev">&#8592;</button>
+    <div class="rc-dots" id="rcDots"></div>
+    <button class="rc-btn" id="rcNext">&#8594;</button>
+  </div>
+  <div class="rc-google">
+    <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x7d662e80bb9d461:0x84de09891c92aa15!12e1?source=g.page.m.np._&laa=nmx-review-solicitation-promoted-recommendation-card" target="_blank">Leave us a Google review ↗</a>
+  </div>
 </section>
 
 
@@ -154,6 +111,28 @@
     </a>
     <p3>Created by Gabriela Pedreros</p3>
 </section>
+
+<script>
+  const rcTrack = document.getElementById('rcTrack');
+  const rcCards = rcTrack.querySelectorAll('.rc-card');
+  const rcDots = document.getElementById('rcDots');
+  let rcCurrent = 0;
+  const rcTotal = rcCards.length - 1;
+  for(let i=0;i<rcTotal;i++){
+    const d=document.createElement('div');
+    d.className='rc-dot'+(i===0?' active':'');
+    d.onclick=()=>rcGo(i);
+    rcDots.appendChild(d);
+  }
+  function rcGo(n){
+    rcCurrent=Math.max(0,Math.min(n,rcTotal-1));
+    const w=rcCards[0].offsetWidth+20;
+    rcTrack.style.transform=`translateX(-${rcCurrent*w}px)`;
+    rcDots.querySelectorAll('.rc-dot').forEach((d,i)=>d.classList.toggle('active',i===rcCurrent));
+  }
+  document.getElementById('rcPrev').onclick=()=>rcGo(rcCurrent-1);
+  document.getElementById('rcNext').onclick=()=>rcGo(rcCurrent+1);
+</script>
 
 </body>
 </html>
