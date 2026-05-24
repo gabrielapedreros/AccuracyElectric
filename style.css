@@ -599,6 +599,20 @@ length:
     .contact-col a:link{
         color:#031941;
     }
+    .row2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    .contact-col{
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box
+    }
+    .contact-col img{
+        width: 100%;
+        max-width: 250px
+    }
 }
 
 /*------------------SERVICES MODERN -----------------*/
