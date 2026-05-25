@@ -414,17 +414,20 @@ length:
     background-color: #f0f4fb;
     text-align: center;
 }
-.row2{/*font color on contact info*/
+.row2{
     display: flex;
     justify-content: center;
     color: #031941;
     width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;        /* lets columns stack instead of overflow on small screens */
 }
 .contact-col{
     flex-basis: auto;
-    padding: 20px 60px;
+    padding: 20px;          /* was 20px 60px — those 60px sides cause overflow */
     line-height: 30px;
     text-align: left;
+    box-sizing: border-box;
 }
 .contact-col p{
     font-size: 17px;
@@ -442,13 +445,20 @@ length:
     text-align: left;
 }
 .contact-col img{
-    width: 200px;
+    width: 100%;
+    max-width: 300px;       /* prevents image from blowing out the column */
 }
 .comment-box{
     color:#141313;
     border: 0px solid #000000;
-    margin: 20px 60px;
+    margin: 20px auto;
     padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
 }
 .comment-box h1{
     text-align: center;
@@ -459,11 +469,12 @@ length:
 .comment-box input, .comment-box textarea{
     width: 100%;
     padding: 10px;
-    margin: 10px ;
+    margin: 10px 0;        /* ← changed from "10px" to "10px 0" — side margins were pushing overflow */
     box-sizing: border-box;
     border: none;
     outline: none;
     background: #f0f4fb;
+    display: block;        /* ← ensures no inline side spacing */
 }
 .comment-box button{
     margin: 10px auto;
@@ -619,4 +630,9 @@ length:
     font-size: 12px;
     margin-top: 4px;
     flex-shrink: 0;
+}
+.company-name {
+    font-size: 22px;
+    font-weight: 700;
+    display: block;
 }
