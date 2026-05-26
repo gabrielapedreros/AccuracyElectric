@@ -17,8 +17,27 @@
     background-size: cover;
     position: relative;
 }
-.company{
+.company {
     color: #fff;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stacks the name and contact details vertically */
+    align-items: flex-start; /* Ensures everything aligns perfectly to the left edge */
+}
+
+.company-name {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2; /* Prevents awkward spacing between lines */
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.company-contact {
+    font-size: 14.5px; /* Keeps it smaller than the company name */
+    font-weight: 300;  /* Slightly lighter weight for clean visual hierarchy */
+    color: #fff;
+    margin-top: 4px;   /* Creates a precise, subtle gap under the company name */
 }
 .header p{
     color: #fff;
@@ -179,6 +198,7 @@ length:
     color: #fff;
     font-size: 20px;
 }
+
 .sub-header2 p{
     font-size: 13px;
     text-align: left;
@@ -642,16 +662,6 @@ length:
     font-size: 12px;
     margin-top: 4px;
     flex-shrink: 0;
-}
-.company-name {
-    font-size: 22px;
-    font-weight: 700;
-    display: block;
-    text-transform: uppercase;
-    color:#fff;
-}
-.company-contact{
-    color:#fff;
 }
 .lutron-badge {
     display: inline-flex;
