@@ -1,62 +1,52 @@
-<!--
-    comments
-    name: Accuracy Electric LLC
-    domain: accuracyelectric.com
-    owner and founder: Edgar Pedreros 
-    provide phone number and email from business card
-    languages: English and Spanish 
-    Colors: blue, white, yellow,
-    License number on bottom right of BS- add on website
-    - services
-    -list all services
-    -add pictures of jobs done as well
-    -make this veryuser friendly 
--->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGX9RY3ZG8"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-LGX9RY3ZG8');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-LGX9RY3ZG8');
     </script>
     <!-- meta tag helps make website responsive -->
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Title of website-->
-    <title>Services</title>
+    <title>Services | Accuracy Electric LLC</title>
     <link rel="stylesheet" href="style.css">
     <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-<!-- icons for menu for smaller devices, cdn 5 is the newest release-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- icons for menu for smaller devices, cdn 5 is the newest release-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <section class="sub-header"> 
+
+    <header class="sub-header"> 
         <nav>
-            <p><span class="company-name">Accuracy Electric LLC</span>239-398-2136<br>Naples, FL</p>
+            <div class="company">
+                <span class="company-name">Accuracy Electric LLC</span>
+                <span class="company-contact">Naples, FL | 239-398-2136</span>
+            </div>
 
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href ="index.html">HOME</a></li>
-                    <li><a href ="about.html">ABOUT US</a></li>
-                    <li><a href ="services.html">SERVICES</a></li>
-                    <li><a href ="reviews.html">REVIEWS</a></li>
-                    <li><a href ="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <h1>Services</h1>
-    </section>
+    </header>
 
-    <section class="services-modern">
+    <main class="services-modern">
         <h1>What We Do</h1>
         <div class="lutron-badge">
             <i class="fa-solid fa-house-signal"></i>
@@ -100,26 +90,30 @@
                 <div class="service-item"><i class="fa-solid fa-bolt"></i> Lighting Control Systems</div>
             </div>
         </div>
-    </section>
+    </main>
 
     <section class="cta">
         <h1>All Services are Done with Excellence</h1>
         <a href="reviews.html" class="hero-btn">Explore Reviews</a>
     </section>
 
+    <!-- Javascript for Toggle Menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu(){ navLinks.style.right = "0"; }
         function hideMenu(){ navLinks.style.right = "-200px"; }
     </script>
 
-    <section class="footer2">
-        <p1>Accuracy Electric LLC<br></p1>
-        <p2>Naples, Fl<br> 239-398-2136<br></p2>
-        <p3>&copy 2023 Accuracy Electric LLC. All rights reserved.</p3>
-        <a href="privacypolicy.html"><p3>Privacy Policy.<br></p3></a>
-        <p3>Created by Gabriela Pedreros</p3>
-    </section>
+    <!--Footer-->
+    <footer class="footer2">
+        <p class="footer-brand">Accuracy Electric LLC</p>
+        <p class="footer-info">Naples, FL | 239-398-2136</p>
+        <p class="footer-legal">&copy; 2026 Accuracy Electric LLC. All rights reserved.</p>
+        <p class="footer-legal">
+            <a href="privacypolicy.html">Privacy Policy.</a>
+        </p>
+        <p class="footer-credit">Created by Gabriela Pedreros</p>
+    </footer>
 
 </body>
 </html>
