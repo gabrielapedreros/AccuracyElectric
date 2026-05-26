@@ -5,7 +5,7 @@ $client_email = $_POST['email'];
 $location = $_POST['location'];
 $project= $_POST['project'];
 
-$email_from ='contact@accuracyelectricllc.com';
+$email_from ='contact@accuracyelectric5.com';
 $email_subject = 'New Form Submission';
 $email_body = "User Name: $name.\n".
                 "User Phone: $client_phone.\n".
