@@ -154,10 +154,11 @@ length:
 .footer-brand{
     font-size: 13px;
     text-transform: uppercase;
+    color:#9f9669;
 }
 .footer-info{
     font-size: 12px;
-    color:#ffffff;
+    color:#9f9669;
 }
 .footer-legal{
     font-size: 10px;
