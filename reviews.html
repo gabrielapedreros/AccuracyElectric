@@ -1,142 +1,127 @@
-<!--
-    -reviews
-    add link for client to review on homeadvisor
-    add link to the google forms as well 
--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGX9RY3ZG8"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-LGX9RY3ZG8');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-LGX9RY3ZG8');
     </script>
     <!-- meta tag helps make website responsive -->
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Title of website-->
-    <title>Reviews</title>
+    <title>Reviews | Accuracy Electric LLC</title>
     <link rel="stylesheet" href="style.css">
     <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-<!-- icons for menu for smaller devices, cdn 5 is the newest release-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- icons for menu for smaller devices, cdn 5 is the newest release-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <section class="sub-header"> 
-    <!-- header class -->
-    <!-- contains logo and links -->
-    <nav>
-        <!-- <a anchor tag to click on obj(logo or link) -->
-            <p><span class="company-name">Accuracy Electric LLC</span>239-398-2136<br>Naples, FL</p>
 
-        <!-- nav-links class -->
-        <!-- create id navLinks to use with javascript-->
-        <div class="nav-links" id="navLinks">
-            <!--for close icon on menu for smaller devices-->
-            <!-- onclick is javascript, hideMenu function-->
-            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-            <ul>
-                <!-- clickable links -->
-                <li><a href ="index.html">HOME</a></li>
-                <li><a href ="about.html">ABOUT US</a></li>
-                <li><a href ="services.html">SERVICES</a></li>
-                <li><a href ="reviews.html">REVIEWS</a></li>
-                <li><a href ="contact.html">CONTACT</a></li>
-            </ul>
+    <header class="sub-header"> 
+        <nav>
+            <div class="company">
+                <span class="company-name">Accuracy Electric LLC</span>
+                <span class="company-contact">Naples, FL | 239-398-2136</span>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Reviews</h1>
+    </header>
+
+    <!-- Reviews-->
+    <main class="reviews-carousel">
+        <div class="rc-top">
+            <h1 class="rc-title">What Our Clients Say</h1>
         </div>
-        <!--menu icon for smaller devices-->
-        <!-- onclick is javascript, showMenu function-->
-        <i class="fa-solid fa-bars" onclick="showMenu()""></i>
-    </nav>
-    <h1>Reviews</h1>
+        <div class="rc-track-wrap">
+            <div class="rc-track" id="rcTrack">
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"I have used this company and feel very fortunate to have found an honest, licensed, and insured electrician. Edgar was the best electrician ever. He fixed so many issues. His prices are also incredibly competitive. We will always use this company and recommend Edgar's expertise."</p><span>K. Jacobs</span></div>
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Best licensed and insured electrician we've ever had. Very pleased with all the work Edgar and Stephan have done."</p><span>K. N.</span></div>
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Responded quickly to my call, scheduled me immediately and swiftly and competently completed the job. Very pleased, I will use Edgar again for all electrical work."</p><span>James T.</span></div>
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Superb service and workmanship. Very satisfied. I have used Edgar several times and I definitely will recommend him to my family and friends."</p><span>Chris N.</span></div>
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Accuracy Electric was very responsive to our needs. They did great work and were very professional! We will continue to work with them in the future."</p><span>Ben J.</span></div>
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"On time, left no stone unturned, Edgar was a pleasure."</p><span>Beth G.</span></div>
+                <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Edgar and his team worked together with FPL to get the job done professionally in a timely matter. My tenants were restored with power within a few hours. Highly recommend Accuracy Electric."</p><span>V.M.</span></div>
+            </div>
+        </div>
+        <div class="rc-controls">
+            <button class="rc-btn" id="rcPrev">&#8592;</button>
+            <div class="rc-dots" id="rcDots"></div>
+            <button class="rc-btn" id="rcNext">&#8594;</button>
+        </div>
+        <div class="rc-google">
+            <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x7d662e80bb9d461:0x84de09891c92aa15!12e1?source=g.page.m.np._&laa=nmx-review-solicitation-promoted-recommendation-card" target="_blank">Leave us a Google review ↗</a>
+        </div>
+    </main>
+
+    <section class="ctar">
+        <h1> 
+            <a href="contact.html" class="hero-btn">CONTACT US</a>
+        </h1>
     </section>
 
-<!-- Reviews-->
-<section class="reviews-carousel">
-  <div class="rc-top">
-    <h1 class="rc-title">What Our Clients Say</h1>
-    </div>
-  <div class="rc-track-wrap">
-    <div class="rc-track" id="rcTrack">
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"I have used this company and feel very fortunate to have found an honest, licensed, and insured electrician. Edgar was the best electrician ever. He fixed so many issues. His prices are also incredibly competitive. We will always use this company and recommend Edgar's expertise."</p><span>K. Jacobs</span></div>
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Best licensed and insured electrician we've ever had. Very pleased with all the work Edgar and Stephan have done."</p><span>K. N.</span></div>
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Responded quickly to my call, scheduled me immediately and swiftly and competently completed the job. Very pleased, I will use Edgar again for all electrical work."</p><span>James T.</span></div>
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Superb service and workmanship. Very satisfied. I have used Edgar several times and I definitely will recommend him to my family and friends."</p><span>Chris N.</span></div>
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Accuracy Electric was very responsive to our needs. They did great work and were very professional! We will continue to work with them in the future."</p><span>Ben J.</span></div>
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"On time, left no stone unturned, Edgar was a pleasure."</p><span>Beth G.</span></div>
-      <div class="rc-card"><div class="rc-stars">★★★★★</div><p>"Edgar and his team worked together with FPL to get the job done professionally in a timely matter. My tenants were restored with power within a few hours. Highly recommend Accuracy Electric."</p><span>V.M.</span></div>
-    </div>
-  </div>
-  <div class="rc-controls">
-    <button class="rc-btn" id="rcPrev">&#8592;</button>
-    <div class="rc-dots" id="rcDots"></div>
-    <button class="rc-btn" id="rcNext">&#8594;</button>
-  </div>
-  <div class="rc-google">
-    <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x7d662e80bb9d461:0x84de09891c92aa15!12e1?source=g.page.m.np._&laa=nmx-review-solicitation-promoted-recommendation-card" target="_blank">Leave us a Google review ↗</a>
-  </div>
-</section>
+    <!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
+    <!--Footer-->
+    <footer class="footer2">
+        <p class="footer-brand">Accuracy Electric LLC</p>
+        <p class="footer-info">Naples, FL | 239-398-2136</p>
+        <p class="footer-legal">&copy; 2026 Accuracy Electric LLC. All rights reserved.</p>
+        <p class="footer-legal">
+            <a href="privacypolicy.html">Privacy Policy.</a>
+        </p>
+        <p class="footer-credit">Created by Gabriela Pedreros</p>
+    </footer>
 
-<section class="ctar">
-    <h1> 
-    <a href="contact.html" class="hero-btn">CONTACT US</a>
-    </h1>
-</section>
-
-<!-- Javascript for Toggle Menu -->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-
-<!--Footer-->
-<section class="footer2">
-    <p1>Accuracy Electric LLC<br></p1>
-    <p2>Naples, Fl<br> 239-398-2136<br></p2>
-    <p3>&copy 2023 Accuracy Electric LLC. All rights reserved.</p3>
-    <a href="privacypolicy.html">
-        <p3>Privacy Policy.<br></p3>
-    </a>
-    <p3>Created by Gabriela Pedreros</p3>
-</section>
-
-<script>
-  const rcTrack = document.getElementById('rcTrack');
-  const rcCards = rcTrack.querySelectorAll('.rc-card');
-  const rcDots = document.getElementById('rcDots');
-  let rcCurrent = 0;
-  const rcTotal = rcCards.length - 1;
-  for(let i=0;i<rcTotal;i++){
-    const d=document.createElement('div');
-    d.className='rc-dot'+(i===0?' active':'');
-    d.onclick=()=>rcGo(i);
-    rcDots.appendChild(d);
-  }
-  function rcGo(n){
-    rcCurrent=Math.max(0,Math.min(n,rcTotal-1));
-    const w=rcCards[0].offsetWidth+20;
-    rcTrack.style.transform=`translateX(-${rcCurrent*w}px)`;
-    rcDots.querySelectorAll('.rc-dot').forEach((d,i)=>d.classList.toggle('active',i===rcCurrent));
-  }
-  document.getElementById('rcPrev').onclick=()=>rcGo(rcCurrent-1);
-  document.getElementById('rcNext').onclick=()=>rcGo(rcCurrent+1);
-</script>
+    <!-- Carousel Script -->
+    <script>
+        const rcTrack = document.getElementById('rcTrack');
+        const rcCards = rcTrack.querySelectorAll('.rc-card');
+        const rcDots = document.getElementById('rcDots');
+        let rcCurrent = 0;
+        const rcTotal = rcCards.length - 1;
+        for(let i=0;i<rcTotal;i++){
+            const d=document.createElement('div');
+            d.className='rc-dot'+(i===0?' active':'');
+            d.onclick=()=>rcGo(i);
+            rcDots.appendChild(d);
+        }
+        function rcGo(n){
+            rcCurrent=Math.max(0,Math.min(n,rcTotal-1));
+            const w=rcCards[0].offsetWidth+20;
+            rcTrack.style.transform=`translateX(-${rcCurrent*w}px)`;
+            rcDots.querySelectorAll('.rc-dot').forEach((d,i)=>d.classList.toggle('active',i===rcCurrent));
+        }
+        document.getElementById('rcPrev').onclick=()=>rcGo(rcCurrent-1);
+        document.getElementById('rcNext').onclick=()=>rcGo(rcCurrent+1);
+    </script>
 
 </body>
 </html>
-
-<!--    <a href="https://forms.gle/JFx98UH2Z7ubH2w38" target="_blank">
-        <img src="images/review.png">
-    </a>
--->
